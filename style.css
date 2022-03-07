@@ -1,0 +1,331 @@
+/*Styling untuk keseluruhan elemen pada body*/
+body{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	background-image: url(./foto/gunung3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+/*Memakai font diluar penyediaan CSS (font eksternal)*/
+@font-face{
+	font-family: "Kaushan Script";
+	src:url('KaushanScript-Regular.otf') format('truetype');
+}
+
+/*Styling pada bagian Header */
+
+.header{   /*Styling bagian header*/	
+	width: 100%;
+	height: 80px;
+	top: 0px; 
+	left: 0px;
+	right: 0px;
+	position: fixed;
+	background: #7aadff;
+	box-shadow: 0 -3px 10px black;
+}
+
+.logo{	/*Styling logo pada header web*/
+	width: 10%;
+	height: 80%;
+	margin-top: -5px;
+	padding-right: 20px;
+	padding-left: 50px;
+	position: absolute;
+	display: inline-block;
+}
+
+.title{	  /*Styling judul web*/
+	padding-left: 200px;
+	font-family: "Kaushan Script";
+	font-size: 30px;
+	line-height: 10%;
+	color: black;
+}
+
+.header ul li{   /*Styling list menu header*/
+	display: inline-block;
+	margin: 5px;
+	margin-right: 20px;
+	padding-top: 8px;
+	padding-right: 5px;
+	float: right;
+}
+
+.header a{   /*Styling list menu header*/
+	text-decoration: none;
+	padding: 5px;
+	font-size: 20px;
+	color: royalblue;
+}
+
+.header a:hover{   /*Styling list menu header ketika disentuh cursor*/
+	color: white;
+	background-color: #60abd6;
+	border-radius: 10px;
+	box-shadow: 2px 2px 0 white;
+	transition: .5s;
+}
+
+/*Akhir styling pada bagian Header
+
+/*Styling pada bagian content*/
+
+.foto{   /*Styling background foto utama konten*/
+	background-image: url(./foto/gunung3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 50%;
+	padding: 0px;
+	height: 550px;
+}
+
+.regist{   /*Styling bagian registrasi pada konten*/
+	width: 100%;
+	height: 160px;
+	padding-top: 10px;
+	color: white;
+	background-color: #3b4f70;
+	float: both;
+}
+
+.regist h1{   /*Styling judul keterangan registrasi*/
+	font-size: 24pt;
+	padding-left: 100px;
+}
+
+.regist p{   /*Styling statement keterangan registrasi*/
+	font-size: 14pt;
+	padding-left: 100px;
+	margin-top: -25px;
+}
+
+.regist h1 button{   /*Styling tombol registrasi*/
+	width: 250px;
+	height: 55px;
+	border: 0;
+	background-color: white;
+	cursor: pointer;
+}
+
+.regist button:hover{   /*Styling tombol registrasi ketika disentuh cursor*/
+	background-color: #9cb7e5;
+	transition: 1s;
+}
+
+.regist .hadu button{   /*Styling value tombol registrasi*/
+	font-size: 10pt;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+/*** style overlay ***/
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.hadu button{
+	float:right;
+	margin-right:100px;
+	width: 250px;
+	height: 55px;
+	border: 0;
+	background-color: white;
+	cursor: pointer;
+	font-family:calibri;
+	margin-top:40px;
+}
+/***akhir style overlay ***/
+
+.main{   /*Styling bagian main konten*/
+	width: 920px;
+	margin: 5px;
+	padding-top: 5px;
+	padding-right: 25px;
+	padding-left: 25px;
+	font-size: 13pt;
+	word-spacing: 2px;
+	line-height: 2em;
+	box-sizing: border-box;
+	float: left;
+}
+
+.main h4{   /*Styling judul main konten*/
+	margin-top: -22px;
+}
+
+.main img{   /*Styling gambar pada  main konten*/
+	width: 800px;
+	height: 400px;
+}
+
+/*Akhir styling pada bagian content*/
+
+/*Styling pada bagian sidebar*/
+
+.sidebar{   /*Styling bagian sidebar*/
+	display: inline-block;
+	margin: 5px;
+	margin-right: 25px;
+	padding-top: 15px;
+	width: 365px;
+	height: 1500px;
+	list-style: none;
+	float: right;
+	box-sizing: border-box;
+	border-left: 1px solid #969fad;
+	border-bottom: 1px solid #969fad;
+}
+
+.sidebar span{   /*Styling judul pada sidebar*/
+	display: inline-block;
+	font-weight: bold;
+	font-size: 23px;
+	padding-left: 30%;
+	text-shadow: 2px 3px 1px white;
+}
+
+.sidebar ul li a,
+.sidebar ul li{   /*Styling pada list sidebar dan link sidebar*/
+	list-style-type: none;
+	text-decoration: none;
+	color: salmon;
+}
+
+.sidebar ul li a img{   /*Styling gambar pada sidebar*/
+	padding-left: 12px;
+	width: 285px;
+	height: 177px;
+}
+
+.sidebar ul p{   /*Styling judul link yang akan dituju*/
+	text-align: center;
+	margin-right: 18px;
+}
+
+.sidebar p a:hover{   /*Styling judul link yang akan dituju ketika disentuh cursor*/
+	color: green;
+}
+
+/*Akhir styling pada bagian Sidebar*/
+
+/*Styling pada bagian Footer*/
+
+.footer{   /*Styling bagian footer web*/
+	width: 100%;
+	height: 100px;
+	display: inline-block;
+	text-align: center;
+	background: linear-gradient(180deg,lightblue,white);
+	margin-top: 2cm;
+}
+
+.footer p{   /*Styling isi keterangan footer*/
+	color: grey;
+	font-size: 14pt;
+	padding-top: 12px;
+}
+
+/*Akhir Styling Pada bagian Footer*/
+
+/*Akhir Homepage*/
+
+
+/***style register***/
+
+.atas{
+	margin-top: 4cm;
+}
+.jarak{
+	margin-bottom:15px;
+}
+input[type=text], input[type=password], input[type=date], input[type=email], input[type=tel], textarea{
+	width:93%;
+	height:25px; 
+	border-radius:8px;
+}
+
+/*** akhir style register***/
+/*** style selamat ***/
+.selamat{
+	text-align: center;
+	margin:200px 200px 200px 200px;
+}
+.selamat a{
+	text-decoration:none;
+	background-color:darkblue;
+	color:white;
+	padding: 10px 30px 10px 30px;
+	border-radius:8px;
+	text-align:center;
+	transition:0.5s;
+	border:none;
+}
+#button:disabled{
+	background-color:darkred;
+}
+.selamat a:hover, #button:hover{
+	background-color:dodgerblue;
+}
+#text a{
+	font-size:15px;
+}
+/*** akhir style selamat ***/
+
+.boxkonten{
+	color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+}
+.ibox{
+	background-color: #ffffffa1;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 3px 0 0;
+    color: inherit;
+    margin-bottom: 1cm;
+    padding: 14px 15px 7px;
+	margin-left: 7cm;
+	margin-right: 7cm;
+    min-height: 48px;
+}
+.boxisi{
+	border: none;
+    border-radius: unset;
+    padding: 10px 20px;
+    margin-bottom: 3px !important;
+    background-color: #f5f5f5;
+    min-height: 20px;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 5%);
+}
+
+.tengah{
+	text-align: center;
+}

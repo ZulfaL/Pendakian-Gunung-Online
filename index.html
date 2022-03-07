@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<title>Mountainesia</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Open Trip Pendakian">
+		<meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+		<meta name="author" content="Kelompok 7">
+		<meta name="viewport" content="width=device width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="overlay.js"></script>
+	</head>
+	<body>
+
+	<!-- Header dan Menu -->
+
+		<!--sebagai konstraktor penampung elemen-elemen pada header-->
+		<div class="header">
+			<!--Membuat list menu header berupa halaman yang dituju-->
+			<ul>
+				<li><a href="logout.php">Logout</a></li>
+				<li><a href="payment.html">Pembayaran</a></li>
+				<li><a href="tutorial.html">Tutorial Pendaftaran</a></li>
+				<li><a href="sop.html">SOP Pendakian</a></li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+			<!--Memberi logo pada header web-->
+			<img class="logo" src="./foto/logo1.0.png" alt="Gambar_Gunung">
+			<!--Memberi judul web-->
+			<p class="title">mountainesia</p>
+		</div>
+
+	<!-- Akhir Header dan Menu -->
+
+
+	<!-- Konten  -->
+
+		<!-- Memberi background gambar utama konten -->
+		<div class="foto"></div>
+		<!-- Membuat bagian registrasi pada konten -->
+		<div class="regist">
+			<div id="overlay" onclick="off()">
+				<div id="text">
+					<h4>Silahkan Daftar</h4>
+					<a href="sop.html" >DAFTAR</a>
+				</div>
+			</div>
+			<div class="hadu">
+			  <button onclick="on()">Daftar Sekarang</button>
+			</div>
+			<h1>Daftar Online Pendakian Gunung Argopuro</h1><br>
+			<p>Booking online dapat dilakukan selama 24 jam, cermati aturan sesuai dengan <br> prosedur yang sudah ditetapkan.</p>
+		</div>
+
+		<!-- Konstraktor untuk menampung Sidebar dan Konten isi -->
+		<div>
+			<!-- Membuat bagian sidebar -->
+			<div class="sidebar">
+				<!-- Judul pada Sidebar -->
+				<span>Another Source</span>
+				<!-- Memberi isi pada sidebar berupa list gambar dan link -->
+				<ul>
+					<li>
+						<a href="https://id.wikipedia.org/wiki/Daftar_gunung_di_Indonesia_menurut_lokasi"><img src="./foto/gunung1.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://id.wikipedia.org/wiki/Daftar_gunung_di_Indonesia_menurut_lokasi">Daftar Gunung di Indonesia</a></p>
+					</li>
+					<li>
+						<a href="https://www.idntimes.com/travel/destination/irvan-14/gunung-tertinggi-indonesia-seven-summits-c1c2/full"><img src="./foto/gunung4.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://www.idntimes.com/travel/destination/irvan-14/gunung-tertinggi-indonesia-seven-summits-c1c2/full">7 Gunung Tertinggi di Indonesia</a></p>
+					</li>
+					<li>
+						<a href="https://travelingyuk.com/taman-hidup-gunung-argopuro/82713/"><img src="./foto/gunung5.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://travelingyuk.com/taman-hidup-gunung-argopuro/82713/">Danau Taman Hidup Gunung Argopuro, Mistis juga Fantastis</a></p>
+					</li>
+					<li>
+						<a href="https://blog.traveloka.com/jawa-timur/gunung-raung-jalur-pendakian-bagi-penantang-adrenalin/"><img src="./foto/gunung6.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://blog.traveloka.com/jawa-timur/gunung-raung-jalur-pendakian-bagi-penantang-adrenalin/">Gunung Raung Jalur Pendakian Paling Ekstrem di Pulau Jawa</a></p>
+					</li>
+					<li>
+						<a href="https://travel.kompas.com/read/2018/12/18/103543727/7-fakta-menarik-tentang-gunung-semeru-yang-wajib-diketahui?page=all"><img src="./foto/gunung7.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://travel.kompas.com/read/2018/12/18/103543727/7-fakta-menarik-tentang-gunung-semeru-yang-wajib-diketahui?page=all">Pesona Pendakian Atap Tertinggi Pulau Jawa</a></p>
+					</li>
+					<li>
+						<a href="https://www.hipwee.com/list/11-fakta-gunung-jayawijaya-di-papua-yang-belum-kamu-ketahui/"><img src="./foto/gunung8.jpg" alt="Gunung-ke-1"></a>
+						<p><a href="https://www.hipwee.com/list/11-fakta-gunung-jayawijaya-di-papua-yang-belum-kamu-ketahui/">Mengintip Keindahan Gunung Jayawijaya</a></p>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Membuat bagian Main konten -->
+			<div class="main">
+				<!-- Memberi judul main konten dan gambar -->
+				<h1>Pendakian Gunung Argopuro</h1>
+				<h4>Trek Pendakian Terpanjang di Pulau Jawa</h4>
+				<img src="./foto/argopuro4.jpg" alt="GunungArgopuro">
+				<!-- Isi keterangan dari main konten -->
+				<p>
+					Bicara soal pendakian gunung sering kita mendengar beberapa gunung punya predikat tersendiri, semisal gunung tertinggi, gunung terdingin, gunung terekstrim, sampai gunung terangker. 
+					Gunung Argopuro salah satunya gunung dengan jalur pendakian terpanjang se-Pulau Jawa.
+					Beberapa orang tentu sudah mengetahui terlebih para pendaki gunung kalau Argopuro memang punya jalur pendakian yang panjang yakni sekitar 63km dan memakan waktu lumayan lama umumnya memerlukan waktu 5 hari 4 malam untuk mendakinya.
+				</p>
+				<h3>Apasih yang istimewa dari Gunung Argopuro?</h3>
+				<p>
+					Gunung Argopuro dengan ketinggian 3088 MDPL ini termasuk deretan semenanjung Gunung Iyang atau Hyang yang membentang sepanjang 5 kabupaten yaitu: Probolinggo, Lumajang, Jember, Bondowoso, dan Situbondo juga diapit oleh Gunung Raung dan Gunung Semeru. Gunung ini juga termasuk kawasan Suaka Margasatwa Dataran Tinggi yang dilindungi dan terjaga keasriannya. Disana dapat kita jumpai habitat dari berbagai macam flora maupun fauna seperti Burung Merak, Babi Hutan, Harimau, <i>Gardenia Palmata</i> atau yang dijuluki oleh para pendaki dengan sebutan Tumbuhan Jancukan. Mengapa dijuluki Tumbuhan Jancukan? karena daun pada tumbuhan ini berbentuk seakan-akan berduri jika disentuh maka akan timbul rasa yang sangat perih pada kulit. Ternyata tumbuhan unik ini tidak semua gunung dapat kita jumpai loh, penasaran keunikan dari tumbuhan ini? langsung saja daftar Event Open Trip Gunung Argopuro ini!
+				</p>
+				<h3>Savana yang Membentang Luas</h3>
+				<img src="./foto/argopuro3.jpg" alt="fotogunungargopuro">
+				<p>
+					Yups Savana!
+					Adalah alasan banyak orang untuk mendaki Gunung Argopuro walaupun dengan jalur pendakian yang sangat panjang. Bagaimana tidak, disini banyak sekali padang savana yang membentang luas dan yang paling populer adalah Savana Alun-Alun Jambangan, Alun-Alun Lonceng, Cisentor, dan Cikasur. Dari banyaknya padang savana di Gunung Argopuro yang paling luas adalah Savana Cikasur disana terdapat panorama yang indah juga sungai yang mengalir didekatnya jika beruntung pendaki dapat bertatap muka langsung dengan Burung Merak dan banyak hewan lainnya. Sensasi tersendiri bukan bagi orang-orang yang kesehariannya berhutankan gedung tinggi dan berpohonkan dinding beton untuk melampiaskan kejenuhannya dengan mendatangi savana ini.
+					Namun dibalik semua itu, Cikasur menyimpan sejarah yang kelam. Konon dahulu pada zaman kolonial Belanda tempat ini adalah bekas landasan pesawat.Bukti yang menunjukkan bahwa Cikasur adalah pesawat adalah sebuah mesin sebuah mesin <i>genset</i> yang ada disalah satu bekas landasan yang tersembunyi diantara semak-semak belukar. Di badan <i>genset</i> tertera tulisan 1912 sebagai petunjuk masanya. Selain itu, Adanya menara pengawas yangb sudah roboh. Kini kondisi landasan pesawat itu berupa lapangan terbuka yang dipenuhi ilalang dan tempat ini dinamakan lembah Cikasur ladang pembantaian <i>(The killed field)</i> kenapa? <br>
+					Landasan pesawat ini pertama kali dikerjakan oleh beberapa orang denagn upah. Lalu pekerja itu dipaksa mengajak penduduk lainnya untuk ikut dalam pembangunan landasan pesawat tersebut. Akhirnya semua orang baik orang tua, muda, laki-laki, dan perempuan mendaftarkan diri untuk bergabung. <br>
+					Setelah pembangunan selesai para pekerja tidak dibayar dan tidak boleh meninggalkan tempat. Mereka dipaksa membuat galian panjang untuk saluran air. Dengan perlakuan kasar dan berbahgai siksaan, disinilah tragedi pembantaian terjadi. Saat galian selesai dikerjakan, beberapa truk terbuka dan serdadu Belanda bersenjata lengkap mendekat dan langsung memberondong  peluru ke arahpekerja dengan membabi buta. Galian itu sengaja dibuatuntuk mengubur para pekerja agar lokasi landasan pesawat itu tidak dibocorkan kepada para pejuang. <br>
+					Landasan ini pernah dikuasai tentara Jepang,namun menjelang kemerdekaan, TNI sempat menguasainya,akhirnya lanjasan itu ditinggalkan karena berada di penguinungan terpencil dan tdak terjamah selama puluhan tahun,bahkan dilupakan.
+					
+				</p>
+				<h3>Hutan Lumut</h3>
+				<img src="./foto/hutanlumut.jpg" alt="fotohutanlumut">
+				<p>
+					Salah satu spot unggulan di Gunung Argopuro adalah Hutan Lumut. Pemandangan yang tidak biasa tersaji di dalamnya, Hutan dengan pohon yang menjulang tinggi, dedaunan yang rimbun membuat cahaya matahari sulit menembus tempat ini menyebabkan berbagai jenis vegetasi dapat dengan mudah berkembang salah satunya adalah lumut membuat hutan disana dibanjiri dengan lumut termasuk juga tumbuh pada batang pepohonan. <br>
+					<i>So</i> tidak perlu datang jauh-jauh ke Hutan Amazon, ataupun Hutan hujan tropis lainnya. Cukup dengan mendaki Gunung Argopuro kamu dapat merasakan Hutan ala Hutan Amazon.
+				</p>
+				<h3>Danau Taman Hidup</h3>
+				<img src="./foto/tamanhidup.jpg" alt="fotodanautamanhidup">
+				<p>
+					Seperti yang dijelaskan sebelumnya, nama yang terkenal dari danau tersebut adalah Taman Hidup. Konon, tempat ini berhubungan dengan legenda Dewi Rengganis, si cantik penunggu Gunung Argopuro. Termasuk danau Taman Hidup yang indahnya tiada tara. Kabarnya, pendaki harus berhati-hati dan menjaga tingkah laku. Tidak boleh berkata kasar dan berteriak-teriak. JIka tidak, Dewi Rengganis akan marah dan mengakibatkan kabut turun, bahkan disertai hujan badai. <br>
+					Beberapa cerita juga menyebutkan bahwa beberapa pendaki ada yang hilang karena menghadapi kemarahan Dewi Rengganis, dan datang ke danau saat malam hari. Ada juga yang menyebutkan jika pendaki hilang karena mereka tidak tahu medan. Entah apapun penyebabnya, memang tidak disarankan untuk berkunjung saat malam. Selain itu ada juga cerita yang menyebutkan jika Dewi Rengganis dan dayang-dayangnya suka menggoda pendaki untuk menyeburkan diri ke dalam danau.
+				</p>
+			</div>
+		</div>
+		
+	<!-- Akhir Konten -->
+
+	<!-- Footer -->
+
+		<div class="footer">
+			<!-- Memberi isi keterangan footer -->
+			<p>DASZ Mountainesia Departement | Copyright 2021 <br>Gunung Argopuro</p>
+		</div>
+
+	<!-- Akhir Footer -->
+
+	</body>
+</html>
